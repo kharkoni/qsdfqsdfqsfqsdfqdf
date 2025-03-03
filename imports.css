@@ -1,0 +1,134 @@
+@import "bootstrap.min.css";
+@import "config.css";
+@import "global.css";
+@import "custom.css";
+@import "responsive.css"
+
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0d0f0f; /* Dark background */
+    color: #ffffff; /* White text */
+    line-height: 1.6;
+}
+
+a {
+    color: #0d0f0f; /* Accent color for links */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #0d0f0f; /* Darker accent color on hover */
+}
+
+/* Header Styles */
+header {
+    background-color: #0d0f0f; /* Dark blue header */
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    color: #3498db; /* Accent color for the title */
+}
+
+/* Main Content Styles */
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+section h2 {
+    font-size: 2rem;
+    color: #3498db; /* Accent color for section headings */
+    margin-bottom: 20px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #0d0f0f; /* Dark blue footer */
+    color: #274d4d; /* Light text color */
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin-bottom: 20px;
+}
+
+.footer-section h3 {
+    font-size: 1.5rem;
+    color: #3498db; /* Accent color for footer headings */
+    margin-bottom: 15px;
+}
+
+.footer-section p {
+    font-size: 0.9rem;
+    color: #bdc3c7; /* Light gray text color */
+    line-height: 1.6;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #bdc3c7; /* Light gray text color */
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #3498db; /* Accent color on hover */
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #0d0f0f; /* Subtle border for separation */
+}
+
+.footer-bottom p {
+    font-size: 0.8rem;
+    color: #bdc3c7; /* Light gray text color */
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-section {
+        margin-bottom: 30px;
+    }
+}
